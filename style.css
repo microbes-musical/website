@@ -1,0 +1,131 @@
+/* Import Google Fonts for a playful and readable look */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Permanent+Marker&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light blue/cell culture color */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50; /* Green (think healthy growth) */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 5px solid #388E3C;
+}
+
+header h1 {
+    font-family: 'Permanent Marker', cursive; /* Fun, distinct font for the title */
+    margin-bottom: 5px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #008080; /* Teal/cyan for a scientific touch */
+    border-bottom: 2px solid #E0F7FA;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* Cast Section Styling */
+#character-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#character-list li {
+    background-color: #FFFDE7; /* Off-white for small cards */
+    padding: 10px 15px;
+    border: 1px solid #FFEB3B;
+    border-radius: 5px;
+    flex: 1 1 calc(33% - 15px); /* Three items per row */
+    text-align: center;
+}
+
+/* Form Styling */
+#subscribe-form input[type="email"], 
+#subscribe-form button {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#subscribe-form button {
+    background-color: #FF5722; /* Orange (Energy) */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#subscribe-form button:hover {
+    background-color: #E64A19;
+}
+
+.video-placeholder {
+    background-color: #222;
+    color: white;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 1.2em;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    font-size: 0.8em;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+    #character-list li {
+        flex: 1 1 100%; /* Stack characters on smaller screens */
+    }
+    #subscribe-form input[type="email"], 
+    #subscribe-form button {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
